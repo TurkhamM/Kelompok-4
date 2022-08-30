@@ -6,6 +6,7 @@ Color primaryColor = Color(0xFFFFFF);
 Color secondaryColor = Color(0x5C0BFB);
 Color dangerColor = Color(0x000000);
 Color whiteColor = Colors.white;
+Color blackColor = Colors.black;
 
 TextStyle dangerTextStyle = GoogleFonts.roboto(
     fontSize: 36, color: dangerColor, fontWeight: FontWeight.w500);
