@@ -1,0 +1,28 @@
+^D:\MYCANTEEN\KANTIN\KELOMPOK5\BUILD\WINDOWS\CMAKEFILES\AB906A217D44DB5B22981BCAC4524D8A\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter\flutter PROJECT_DIR=D:\MyCanteen\Kantin\Kelompok5 FLUTTER_ROOT=C:\flutter\flutter FLUTTER_EPHEMERAL_DIR=D:\MyCanteen\Kantin\Kelompok5\windows\flutter\ephemeral PROJECT_DIR=D:\MyCanteen\Kantin\Kelompok5 FLUTTER_TARGET=D:\MyCanteen\Kantin\Kelompok5\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\MyCanteen\Kantin\Kelompok5\.dart_tool\package_config.json C:/flutter/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MYCANTEEN\KANTIN\KELOMPOK5\BUILD\WINDOWS\CMAKEFILES\E02CA53A58200F6A2B1349746D7DB596\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MYCANTEEN\KANTIN\KELOMPOK5\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/MyCanteen/Kantin/Kelompok5/windows -BD:/MyCanteen/Kantin/Kelompok5/build/windows --check-stamp-file D:/MyCanteen/Kantin/Kelompok5/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

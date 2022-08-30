@@ -1,0 +1,10 @@
+^D:\MYCANTEEN\KANTIN\KELOMPOK5\BUILD\WINDOWS\CMAKEFILES\6860D520975776E1BB95AE3D4561C23E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/MyCanteen/Kantin/Kelompok5/windows -BD:/MyCanteen/Kantin/Kelompok5/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/MyCanteen/Kantin/Kelompok5/build/windows/splash.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
