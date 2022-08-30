@@ -35,14 +35,35 @@ class HomePage extends StatelessWidget {
                         height: 50,
                         width: 300,
                         child: TextFormField(
-                            decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: "Cari yang anda mau",
-                        )),
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Cari yang anda mau",
+                          ),
+                        ),
+                      ),
+                      Spacer(),
+                      Icon(
+                        Icons.camera_alt,
+                        size: 27,
+                        color: Color(0xFF76FF03),
                       )
                     ],
                   ),
-                )
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    vertical: 20,
+                    horizontal: 10,
+                  ),
+                  child: Text(
+                    "Kategori",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF76FF03),
+                    ),
+                  ),
+                ),
               ],
             ),
           )
