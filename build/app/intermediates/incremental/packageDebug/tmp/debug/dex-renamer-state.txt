@@ -1,0 +1,4 @@
+#Sat Sep 03 17:22:01 ICT 2022
+base.0=D\:\\kelompok\\Kelompok5\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
