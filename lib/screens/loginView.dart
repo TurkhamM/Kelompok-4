@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Masuk MyCanteen',
+                    'Silahkan memasukkan nama dan kata sandi untuk masuk MyCanteen',
                     style: heading1.copyWith(color: textBlack),
                   ),
                 ],

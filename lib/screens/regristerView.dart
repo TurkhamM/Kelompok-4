@@ -34,7 +34,7 @@ class _RegisterPageState extends State<RegisterPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'APP Flutter\nRegister',
+                  'Silahkan mengisi data diri anda untuk mendaftar MyCanteen',
                   style: heading2.copyWith(color: textBlack),
                 ),
                 SizedBox(

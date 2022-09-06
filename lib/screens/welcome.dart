@@ -29,8 +29,8 @@ class Welcome extends StatelessWidget {
               children: [
                 GestureDetector(
                   child: Text(
-                    'Selamat Datang Di Kantin',
-                    style: TextStyle(fontSize: 30, color: gelap),
+                    'Selamat Datang Di MyCanteen',
+                    style: TextStyle(fontSize: 30, color: textBlack),
                   ),
                 )
               ],
