@@ -1,5 +1,8 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:splash/widgets/CategoriesWidgets.dart';
 import 'package:splash/widgets/HomeAppBar.dart';
+import 'package:splash/widgets/ItemsWidgets.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -9,7 +12,7 @@ class HomePage extends StatelessWidget {
         children: [
           HomeAppBar(),
           Container(
-            height: 500,
+            //height: 500,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -64,9 +67,46 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
+                CategoriesWidgets(),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  child: Text(
+                    "Rekomendasi Makanan & Minuman",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF76FF03),
+                    ),
+                  ),
+                ),
+                ItemsWidgets(),
               ],
             ),
           )
+        ],
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        onTap: (value) {},
+        height: 50,
+        color: Color(0xFF76FF03),
+        items: [
+          Icon(
+            Icons.home,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.shopping_cart,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.list,
+            size: 30,
+            color: Colors.white,
+          ),
         ],
       ),
     );
