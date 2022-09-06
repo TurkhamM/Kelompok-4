@@ -32,22 +32,16 @@ class _RegisterPageState extends State<RegisterPage> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'APP Flutter\nRegister',
-                  style: heading2.copyWith(color: textBlack),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
                 Image.asset(
-                  'assets/images/accent.png',
-                  width: 99,
-                  height: 4,
-                )
+                  'assets/images/icon_register.png',
+                  width: 192,
+                  height: 148,
+                ),
+                Text('Silahkan Mengisi Data Diri Anda\nJika Ingin Terus Login')
               ],
             ),
             SizedBox(
-              height: 48,
+              height: 28,
             ),
             Form(
                 child: Column(
@@ -58,14 +52,44 @@ class _RegisterPageState extends State<RegisterPage> {
                       borderRadius: BorderRadius.circular(14)),
                   child: TextFormField(
                     decoration: InputDecoration(
-                        hintText: 'Email',
+                        hintText: 'NISN',
                         hintStyle: heading6.copyWith(color: textGrey),
                         border:
                             OutlineInputBorder(borderSide: BorderSide.none)),
                   ),
                 ),
                 SizedBox(
-                  height: 32,
+                  height: 4,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      color: textWhiteGrey,
+                      borderRadius: BorderRadius.circular(14)),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        hintText: 'Nama',
+                        hintStyle: heading6.copyWith(color: textGrey),
+                        border:
+                            OutlineInputBorder(borderSide: BorderSide.none)),
+                  ),
+                ),
+                SizedBox(
+                  height: 4,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      color: textWhiteGrey,
+                      borderRadius: BorderRadius.circular(14)),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        hintText: 'Kelas',
+                        hintStyle: heading6.copyWith(color: textGrey),
+                        border:
+                            OutlineInputBorder(borderSide: BorderSide.none)),
+                  ),
+                ),
+                SizedBox(
+                  height: 4,
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -89,7 +113,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 32,
+                  height: 4,
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -148,7 +172,7 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             CustomPrimaryButton(
               buttonColor: primaryBlue,
-              textValue: 'Register',
+              textValue: 'Regist',
               textColor: Colors.white,
             ),
             SizedBox(
