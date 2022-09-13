@@ -1,9 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:splash/widgets/CategoriesWidgets.dart';
 import 'package:splash/widgets/HomeAppBar.dart';
-import 'package:splash/widgets/ItemsWidget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,8 +9,7 @@ class HomePage extends StatelessWidget {
         children: [
           HomeAppBar(),
           Container(
-            // temporary height
-            // height: 500,
+            height: 500,
             padding: EdgeInsets.only(top: 15),
             decoration: BoxDecoration(
               color: Color(0xFFEDECF2),
@@ -56,7 +51,6 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(
                     vertical: 20,
                     horizontal: 10,
@@ -70,23 +64,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                // kategori
-                CategoriesWidgets(),
-
-                Container(
-                  alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-                  child: Text(
-                    "Rekomendasi Untuk Anda",
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xFF76FF03),
-                    ),
-                  ),
-                ),
-                // items Widget
-                ItemsWidgets(),
               ],
             ),
           )
