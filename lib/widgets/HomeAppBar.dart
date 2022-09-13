@@ -12,7 +12,7 @@ class HomeAppBar extends StatelessWidget {
           Icon(
             Icons.sort,
             size: 30,
-            color: Color(0xFF76FF03),
+            color: Color(0xFF00FF00),
           ),
           Padding(
             padding: EdgeInsets.only(left: 20),
@@ -21,7 +21,7 @@ class HomeAppBar extends StatelessWidget {
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF76FF03),
+                color: Color(0xFF00FF00),
               ),
             ),
           ),
@@ -36,11 +36,13 @@ class HomeAppBar extends StatelessWidget {
               ),
             ),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, "cardPage");
+              },
               child: Icon(
                 Icons.shopping_bag_outlined,
                 size: 35,
-                color: Color(0xFF76FF03),
+                color: Color(0xFF00FF00),
               ),
             ),
           ),

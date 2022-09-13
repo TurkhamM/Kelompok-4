@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class ItemsWidgets extends StatelessWidget {
@@ -26,11 +24,11 @@ class ItemsWidgets extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(5),
                       decoration: BoxDecoration(
-                        color: Color(0xFF76FF03),
+                        color: Color(0xFF00FF00),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
-                        "-5%",
+                        "Favorite",
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.white,
@@ -45,7 +43,9 @@ class ItemsWidgets extends StatelessWidget {
                   ],
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, "ItemsPage");
+                  },
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
@@ -63,7 +63,7 @@ class ItemsWidgets extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF64DD17),
+                      color: Color(0xFF00FF00),
                     ),
                   ),
                 ),
@@ -73,7 +73,7 @@ class ItemsWidgets extends StatelessWidget {
                     "Tulis detail Produk",
                     style: TextStyle(
                       fontSize: 15,
-                      color: Color(0xFF76FF03),
+                      color: Color(0xFF00FF00),
                     ),
                   ),
                 ),
@@ -87,15 +87,15 @@ class ItemsWidgets extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Color(0xFF76FF03),
+                          color: Color(0xFF00FF00),
                         ),
+                      ),
+                      Icon(
+                        Icons.shopping_cart_checkout,
+                        color: Color(0xFF00FF00),
                       ),
                     ],
                   ),
-                ),
-                Icon(
-                  Icons.shopping_cart_checkout,
-                  color: Color(0xFF76FF03),
                 ),
               ],
             ),
