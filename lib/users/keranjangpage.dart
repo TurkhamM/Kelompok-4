@@ -10,7 +10,7 @@ class _KeranjangPageState extends State<KeranjangPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Canteen'),
+        title: Text('Keranjang'),
       ),
       body: Center(
         child: const Text(

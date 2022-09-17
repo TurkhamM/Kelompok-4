@@ -10,7 +10,7 @@ class _AkunPageState extends State<AkunPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Canteen'),
+        title: Text('Profile'),
       ),
       body: Center(
         child: const Text(

@@ -56,9 +56,9 @@ class _LauncherPageState extends State<LauncherPage> {
           children: <Widget>[
             Center(
               child: Image.asset(
-                "assets/logo.png",
-                height: 100.0,
-                width: 280.0,
+                "assets/logo-kantin.png",
+                height: 137.0,
+                width: 137.0,
               ),
             ),
           ],

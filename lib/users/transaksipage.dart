@@ -10,7 +10,7 @@ class _TransaksiPageState extends State<TransaksiPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Canteen'),
+        title: Text('Transaksi'),
       ),
       body: Center(
         child: const Text(

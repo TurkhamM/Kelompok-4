@@ -24,9 +24,6 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('My Canteen'),
-      ),
       body: container[_bottomNavCurrentIndex],
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Palette.bg1,
@@ -91,7 +88,7 @@ class _LandingPageState extends State<LandingPage> {
               Icons.person_outline,
               color: Colors.grey,
             ),
-            label: 'Profil',
+            label: 'Profile',
           ),
         ],
       ),
