@@ -50,7 +50,7 @@ class _BerandaState extends State<Beranda> with SingleTickerProviderStateMixin {
               fillColor: const Color(0xfff3f3f4),
               filled: true),
         ),
-        backgroundColor: Palette.bg2,
+        backgroundColor: Palette.bg1,
         bottom: TabBar(
           controller: _tabController,
           indicatorColor: Colors.white,
